@@ -33,7 +33,45 @@ function readLine() {
  * nums: An array of numbers.
  */
 function modifyArray(nums) {
-    
+    var something = function(n){
+        if(n%2==0)
+            return n*2;
+        else
+            return n*3;
+    }
+    var newArray = nums.map(something);
+    return newArray;
+        // method 2
+        
+        // function modifyArray(nums) {
+        //     var something = function(n){
+        //         var a = (n%2==0) ? n*2: n*3;
+        //         return a;
+        //     }
+        //     var newArray = nums.map(something);
+        //     return newArray;
+            
+        // }
+        // //method 3
+        
+        // function modifyArray(nums) {
+        //     var something = n => n = (n%2==0) ? n*2: n*3;
+        //     var newArray = nums.map(something);
+        //     return newArray;
+            
+        // }
+        // //method 4
+        
+        // function modifyArray(nums) {
+        //     var newArray = nums.map(n => n = (n%2==0) ? n*2: n*3);
+        //     return newArray;
+            
+        // }
+        // //method 5
+        
+        // function modifyArray(nums) {
+        //     return nums.map(n => n = (n%2==0) ? n*2: n*3);   
+        // }
 }
 
 
